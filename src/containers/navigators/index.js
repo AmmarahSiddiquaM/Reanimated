@@ -5,7 +5,6 @@ import {colors} from '../../theme';
 import {navigationRef} from '../../utils/navigation';
 
 import RootStack from './root-stack';
-import AuthStack from './auth-stack';
 
 export const navTheme = {
   colors: {

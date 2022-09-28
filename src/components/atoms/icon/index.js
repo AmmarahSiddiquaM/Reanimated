@@ -6,7 +6,13 @@ import {colors} from '../../../theme';
 
 class Icon extends React.Component {
   render() {
-    const {name, size = 22, color = colors.primary, style} = this.props;
+    const {
+      name,
+      size = 22,
+      color = colors.primary,
+      useIconColor,
+      style,
+    } = this.props;
     return (
       <View
         style={[
@@ -16,7 +22,7 @@ class Icon extends React.Component {
           },
           style,
         ]}>
-        <Image style={styles.image(color)} source={icons[name]} />
+        <Image style={styles.image(color, useIconColor)} source={icons[name]} />
       </View>
     );
   }
@@ -25,10 +31,12 @@ class Icon extends React.Component {
 export default Icon;
 
 const styles = StyleSheet.create({
-  image: color => ({
+  image: (color, useIconColor) => ({
     width: '100%',
     height: '100%',
     resizeMode: 'contain',
-    tintColor: color,
+    ...(!useIconColor && {
+      tintColor: color,
+    }),
   }),
 });

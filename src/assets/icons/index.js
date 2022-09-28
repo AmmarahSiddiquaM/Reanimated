@@ -11,4 +11,6 @@ export const icons = {
   search: require('./search.png'),
   user: require('./user.png'),
   'icon-arrow-prev': require('./icon-arrow-prev.png'),
+  'rank-up': require('./rank-up.png'),
+  'rank-down': require('./rank-down.png'),
 };

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {StyleSheet, StatusBar, View} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 import Animated, {
@@ -8,8 +8,10 @@ import Animated, {
   useSharedValue,
 } from 'react-native-reanimated';
 import {SafeAreaView} from 'react-native-safe-area-context';
+
+import {dimensions, spacing} from '../../../theme';
+
 import {Text} from '../../../components/atoms';
-import {colors, dimensions, spacing} from '../../../theme';
 import CustomTopTab from './CustomTopTab';
 import ListItem from './ListItem';
 
