@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {colors} from '../../theme';
 import {navigationRef} from '../../utils/navigation';
 
-import RootStack from './root-stack';
+import Drawer from './drawer';
 
 export const navTheme = {
   colors: {
@@ -15,7 +15,7 @@ export const navTheme = {
 const Navigator = () => {
   return (
     <NavigationContainer theme={navTheme} ref={navigationRef}>
-      <RootStack />
+      <Drawer />
     </NavigationContainer>
   );
 };

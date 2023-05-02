@@ -1,0 +1,33 @@
+export const images = {
+  coffees: {
+    c1: require('./coffees/c1.png'),
+    c2: require('./coffees/c2.png'),
+    c3: require('./coffees/c3.png'),
+    c4: require('./coffees/c4.png'),
+    c5: require('./coffees/c5.png'),
+  },
+  books: {
+    1: require('./books/1.png'),
+    2: require('./books/2.png'),
+    3: require('./books/3.png'),
+    4: require('./books/4.png'),
+    5: require('./books/5.png'),
+    6: require('./books/6.png'),
+    7: require('./books/7.png'),
+    8: require('./books/8.png'),
+    9: require('./books/9.png'),
+    10: require('./books/10.png'),
+    11: require('./books/11.png'),
+  },
+  playingCards: {
+    hand: require('./playing-cards/hand.png'),
+    ace_of_spades: require('./playing-cards/ace_of_spades.png'),
+    king_of_clubs: require('./playing-cards/king_of_clubs.png'),
+    nine_of_hearts: require('./playing-cards/nine_of_hearts.png'),
+    queen_of_hearts: require('./playing-cards/queen_of_hearts.png'),
+    red_joker: require('./playing-cards/red_joker.png'),
+    six_of_diamonds: require('./playing-cards/six_of_diamonds.png'),
+    three_of_spades: require('./playing-cards/three_of_spades.png'),
+    ten_of_diamonds: require('./playing-cards/ten_of_diamonds.png'),
+  },
+};
